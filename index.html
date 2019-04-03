@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+
+<body id="body">
+
+
+    <select onchange="selectimg()" id="select-option">
+        <option value="1">ntr1</option>
+        <option value="2">ntr2</option>
+        <option value="3">ntr3</option>
+        <option value="4">ntr4</option>
+    </select><script>
+        function selectimg() {
+
+            var body = document.getElementById("body");
+
+            if (document.getElementById("select-option").value === "1") {
+                body.style.backgroundImage = "url('IMG/IMG1.jpg')";
+                body.style.backgroundSize = "cover";
+            } else if (document.getElementById("select-option").value === "2") {
+                body.style.backgroundImage = "url('IMG/IMG2.jpg')";
+                body.style.backgroundSize = "cover";
+            } else if (document.getElementById("select-option").value === "3") {
+                body.style.backgroundImage = "url('IMG/IMG3.jpg')";
+                body.style.backgroundSize = "cover";
+            } else if (document.getElementById("select-option").value === "4") {
+                body.style.backgroundImage = "url('IMG/IMG4.jpg')";
+                body.style.backgroundSize = "cover";
+            } else {
+                body.style.backgroundImage = "url('IMG/IMG4.jpg')";
+
+            }
+
+        };
+
+    </script>
+
+
+</body>
